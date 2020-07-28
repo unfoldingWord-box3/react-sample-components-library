@@ -1,11 +1,12 @@
 {
   "name": "react-sample-components-library",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "styleguidist server"
+    "start": "styleguidist server",
+    "build": "styleguidist build",
+    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline"
   },
   "keywords": [],
   "author": "",
